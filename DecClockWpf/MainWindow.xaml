@@ -1,0 +1,109 @@
+﻿<Window x:Class="DecClockWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DecClockWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="508" Width="756">
+    <Grid Margin="1,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="171*"/>
+            <RowDefinition Height="263*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFEE154"/>
+                <GradientStop Color="#FFA3DEC6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Center" Margin="0,10,0,0" Grid.RowSpan="2" VerticalAlignment="Top">
+            <Ellipse HorizontalAlignment="Left" Height="415" Stroke="Black" VerticalAlignment="Top" Width="415" StrokeThickness="10">
+                <Ellipse.Effect>
+                    <DropShadowEffect/>
+                </Ellipse.Effect>
+            </Ellipse>
+            <Label Content="10" HorizontalAlignment="Left" Margin="180,0,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White" HorizontalContentAlignment="Center">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="2" HorizontalAlignment="Left" Margin="350,98,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="3" HorizontalAlignment="Left" Margin="350,207,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="4" HorizontalAlignment="Left" Margin="294,303,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="5" HorizontalAlignment="Center" Margin="0,336,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="9" HorizontalAlignment="Left" Margin="92,34,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="8" HorizontalAlignment="Left" Margin="39,98,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="7" HorizontalAlignment="Left" Margin="39,207,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="6" HorizontalAlignment="Left" Margin="92,303,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label Content="1" HorizontalAlignment="Left" Margin="294,34,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Impact" Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Ellipse HorizontalAlignment="Center" Height="25" Stroke="Black" VerticalAlignment="Center" Width="25" Fill="Black"/>
+            <Canvas x:Name="canMinHand" Width="5" Height="180" Background="Black" Margin="205,69,205,166" RenderTransformOrigin="0.5,0.77"/>
+            <Canvas x:Name="canHouHand" Width="5" Background="Black" Margin="205,118,205,166" RenderTransformOrigin="0.5,0.68">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="44.942"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+            <Canvas x:Name="canSecHand" Width="5" Background="Red" Margin="205,63,205,166" RenderTransformOrigin="0.5,0.77">
+                <Canvas.Effect>
+                    <DropShadowEffect/>
+                </Canvas.Effect>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.444"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+
+        </Grid>
+
+    </Grid>
+</Window>

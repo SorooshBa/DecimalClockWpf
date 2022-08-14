@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Seven Segment.ttf" />
     <None Remove="Untitled-2.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Seven Segment.ttf" />
     <Resource Include="Untitled-2.png" />
   </ItemGroup>
 

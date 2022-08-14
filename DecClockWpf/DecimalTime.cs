@@ -18,7 +18,7 @@ namespace DecClockWpf
         public override String ToString()
         {
             Calculate();
-            return dhour + ":" + dminut + ":" + (int)dsecond;
+            return dhour.ToString("00") + ":" + dminut.ToString("00") + ":" + ((int)dsecond).ToString("00");
         }
         private void Calculate()
         {

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DecClockWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="508" Width="756">
-    <Grid Margin="1,0,10,0">
+        Title="Decimal Clock By Soroosh.B" Height="508" Width="756" WindowStyle="ToolWindow">
+    <Grid x:Name="MainGrid" Margin="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="171*"/>
             <RowDefinition Height="263*"/>
@@ -102,6 +102,8 @@
                     </TransformGroup>
                 </Canvas.RenderTransform>
             </Canvas>
+            <Canvas  Background="Black" Width="100" Height="40" Margin="158,272,157,93" Panel.ZIndex="-2"/>
+            <Label x:Name="lblDigital" Content="0:0:0.00" HorizontalAlignment="Center" Panel.ZIndex="-2" Margin="0,280,0,0" VerticalAlignment="Top" Foreground="#FF26F423" FontSize="24" Width="101" HorizontalContentAlignment="Center" FontFamily="./#Seven Segment"/>
 
         </Grid>
 
